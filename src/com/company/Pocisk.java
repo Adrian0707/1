@@ -30,8 +30,8 @@ public class Pocisk extends Obiekty implements Animowane {
        v=sqrt((sqrt((nadawca.x-odbiorca.x)*(nadawca.x-odbiorca.x))*g)/(sin(2*poz)));
         if(kier){
             //v=sqrt(60-poz/2);
-            x-=czas*v*cos(poz);
-            y-=czas*v*sin(poz)-(2*g*czas*czas)*10;
+            x+=czas*v*cos(poz);
+            y-=czas*v*sin(poz)-(2*g*czas*czas)*11;
             //x+=czas*v*cos(poz);
             //y-=czas*v*sin(poz/20)+(g*czas*czas/2)*400;
            // x+=3+(10-r*2);
@@ -69,7 +69,7 @@ public class Pocisk extends Obiekty implements Animowane {
     }
     public Pocisk(int a, Postać nadawca,Postać odbiorca, Color b){
 
-       poz=(nadawca.wsk.postawa-50)/25;
+       poz=(nadawca.wsk.postawa+21)/40;
         r=a;
         kier=nadawca.kier;
 
