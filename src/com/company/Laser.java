@@ -17,7 +17,7 @@ public class Laser extends Pocisk {
             //v=sqrt(60-poz/2);
             //x+=czas*v*cos(poz);
             //y-=czas*v*sin(poz)-(g*czas*czas)*21;//-sin(poz)*0.0032*sqrt((nadawca.x-odbiorca.x)*(nadawca.x-odbiorca.x));
-            x+=3*r/6;
+            x+=3* getR() /6;
             y-= sin(czas*15-4*poz-10)*5;
             //x+=czas*v*cos(poz);
             //y-=czas*v*sin(poz/20)+(g*czas*czas/2)*400;
@@ -33,7 +33,7 @@ public class Laser extends Pocisk {
             //y-=czas*v*sin(poz)-(g*czas*czas)*21;//-sin(poz)*0.0022*sqrt((nadawca.x-odbiorca.x)*(nadawca.x-odbiorca.x));
             //x-=3*r/6;
             //y-= sin(czas*15-4*poz-10)*10;
-            x-=3*r/6;
+            x-=3* getR() /6;
             y-= sin(czas*15-4*poz-10)*5;
             czas+=0.01;
         }
