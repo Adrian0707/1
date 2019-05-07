@@ -1,5 +1,6 @@
 package com.company;
 
+import javafx.scene.effect.DisplacementMap;
 import javafx.scene.paint.Color;
 
 import static java.lang.Math.cos;
@@ -19,6 +20,8 @@ public class Krew extends Czasteczka{
     public Krew(double x, double y, Color a, double r) {
         super(x, y, a, r);
         setG(0.1);
+       // this.getSpar().setEffect(new javafx.scene.effect.GaussianBlur());
+        //this.getSpar().setSmooth(true);
     }
 
     /**

@@ -78,8 +78,9 @@ public class Main extends Application{
         Pogoda pogoda = new Pogoda();
         Rectangle swiatlo = new Rectangle(0, 0, WIDTH, HEIGHT);
         swiatlo.setFill(Color.gray(0.5));
-        swiatlo.setBlendMode(BlendMode.MULTIPLY);
-        swiatlo.setEffect(new javafx.scene.effect.Glow());
+        swiatlo.setBlendMode(BlendMode.SOFT_LIGHT);
+
+        //swiatlo.setEffect(new javafx.scene.effect.GaussianBlur());
         swiatlo.setOpacity(0.8);
         /**
          * glowna petla animacji
